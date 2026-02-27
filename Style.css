@@ -12,19 +12,19 @@ body{
   position:relative;
 }
 
-/* Network Grid Background */
-body::before{
+/* Background */
+body::before
+{
   content:"";
   position:fixed;
   inset:0;
   background-image:
-    linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+    linear-gradient(rgba(78, 9, 78, 0) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(243, 134, 247, 0.04) 1px, transparent 1px);
   background-size:60px 60px;
   z-index:-2;
 }
 
-/* Soft Glow */
 body::after{
   content:"";
   position:fixed;
@@ -233,7 +233,7 @@ h2{
   font-size:1.8rem;
 }
 
-/* Responsive */
+
 @media(max-width:768px){
   .hero{
     flex-direction:column;
