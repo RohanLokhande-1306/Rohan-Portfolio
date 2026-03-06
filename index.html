@@ -17,8 +17,10 @@
   <div id="time"></div>
 
   <script>
-    let myDate = new Date();
-    document.getElementById("time").innerText = myDate.toLocaleString();
+    setInterval(function(){
+      let myDate = new Date();
+      document.getElementById("time").innerText = myDate.toLocaleString();
+    }, 1000);
   </script>
 
 </nav>
